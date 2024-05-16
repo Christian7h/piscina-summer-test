@@ -16,101 +16,89 @@ import Navbar from "../components/Navbar.astro";
 <body>
     <Navbar/>
     <div class="mt-36">
-    <h1 id="" class="" ><h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white"><span class="text-blue-600 dark:text-blue-500">Mantenciones</span></h1>
+    <h1 id="" class="" ><h1 class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white"><span class="text-blue-600 dark:text-blue-500">Mantención</span></h1>
     </div>
-    <div class="grid grid-rows-2 grid-cols-2 mx-auto mt-32"> <!--Este es el grid cuidado -->
-        
-     <div class="w-full h-full flex justify-center ">
-        <Fondo/>
-        <a href="" class="z-0 my-6   flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="cloro.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Mantención de HP y Cloro
-                    </h5>
-                    <p class="mb-3 font-normal text-white dark:text-gray-400">La mantención de piscinas con cloro es crucial para garantizar agua limpia y segura. HP (hipoclorito de calcio) es comúnmente usado. Controlar niveles, limpiar filtros y evitar el exceso son prácticas clave para mantener una piscina saludable y disfrutable.     
-                    </p>
-                </div>
-        </a>
-     </div>
-     <div class="w-full h-full flex justify-center ">
-        <Fondo/>
-        <a href="" class="z-0 my-6  flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="hojas.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Retiro completo de las hojas y particulas en superficie
-                    </h5>
-                    <p class="mb-3 font-normal text-white dark:text-gray-400">El retiro completo de hojas y partículas en la superficie de la piscina es esencial para mantenerla limpia y segura. El uso regular de redes y skimmers ayuda a prevenir obstrucciones en los filtros y garantiza un agua cristalina, evitando así problemas de calidad y potenciales riesgos para la salud     
-                    </p>
-                </div>
-        </a>
-     </div>
-     <div class="w-full h-full flex justify-center ">
-        <Fondo/>
-        <a href="" class="z-0 my-6 flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="filtro.jpg" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Mantenimiento del sistema de filtración</h5>
-                    <p class="mb-3 font-normal text-white dark:text-gray-400">El mantenimiento del sistema de filtración de la piscina es vital para su funcionamiento óptimo. Limpieza regular de filtros, revisión de bombas y ajuste de niveles de químicos son prácticas clave. Un sistema bien mantenido asegura agua limpia y segura, prolongando la vida útil de la piscina.
-                </div>
-        </a>
-     </div>
-     <div class="w-full h-full flex justify-center ">
-        <Fondo/>
-        <a href="" class="z-0 my-6 flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="aspirador.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Aspirado por carro profesional
-                    </h5>
-                    <p class="mb-3 font-normal text-white dark:text-gray-400">El aspirado por carro profesional es fundamental para mantener la limpieza de piscinas. Con equipos especializados, se eliminan eficientemente residuos del fondo y paredes, previniendo la proliferación de bacterias y algas. Esta técnica garantiza una piscina impecable y segura para el disfrute de todos.       
-                    </p>
-                </div>
-        </a>
-     </div>
+    <div class="flex flex-wrap justify-center items-center gap-6">
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="cloro.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Mantención de HP y Cloro en piscinas</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">La mantención de piscinas utilizando cloro es crucial para garantizar un agua limpia y segura. El HP o tambien llamado Hipoclorito de Calcio es lo que comúnmente es usado para controlar niveles, limpiar los filtros y para evitar el exceso, son prácticas clave para mantener una piscina saludable y disfrutable.
+                </p>               
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="hojas.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Retiro de hojas y particulas en la superficie</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">El retiro completo de hojas y partículas en la superficie de la piscina es esencial para mantenerla limpia y segura. El uso regular de redes y skimmers ayuda a prevenir obstrucciones en los filtros y garantiza un agua limpia, evitando así problemas de calidad y potenciales riesgos para la salud. 
+                </p>                
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="filtro.jpg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Mantención de sistema de filtración</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">El mantenimiento del sistema de filtración de la piscina es vital para su funcionamiento óptimo. La limpieza regular de filtros, revisión de bombas y ajuste de niveles de químicos son prácticas clave. Un sistema bien mantenido asegura agua limpia y segura, prolongando la vida útil de la piscina.
+                </p>               
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="aspirador.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Aspiración por carros profesionales</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">El aspirado por carro profesional es fundamental para mantener la limpieza de piscinas. Con equipos especializados, se eliminan eficientemente residuos del fondo y paredes, previniendo la proliferación de bacterias y algas. Esta técnica garantiza una piscina impecable y segura para el disfrute de todos.
+                </p>                
+            </div>
+        </div>
+    </div>
+
     </div> <!--Este es el grid cuidado -->
         <div id="#" class="mt-36"> <!--grande contenedor del titulo -->
         <h1><h1  id="#" class="mb-4 text-center text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white"> <span class="text-blue-600 dark:text-blue-500">Reparaciones</span></h1>
         </h1>
-        <div>
-            <div class="grid grid-rows-2 grid-cols-2 mx-auto mt-32"> <!--Este es el grid cuidado -->
         
-                <div class="w-full h-full flex justify-center ">
-                   <Fondo/>
-                   <a href="" class="z-0 my-6   flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                       <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="fuga.jpg" alt="">
-                           <div class="flex flex-col justify-between p-4 leading-normal">
-                               <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación de fugas</h5>
-                               <p class="mb-3 font-normal text-white dark:text-gray-400">La reparación de fugas en piscinas es esencial para prevenir daños mayores y conservar el agua. Mediante inspección meticulosa y técnicas de sellado adecuadas, se localizan y corrigen fugas, asegurando la integridad estructural y evitando pérdidas innecesarias de agua, manteniendo así un entorno sostenible y funcional.      
-                               </p>
-                           </div>
-                   </a>
-                </div>
-                
-                <div class="w-full h-full flex justify-center ">
-                   <Fondo/>
-                   <a href="" class="z-0 my-6 flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                       <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="grieta.png" alt="">
-                           <div class="flex flex-col justify-between p-4 leading-normal">
-                               <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación de grietas</h5>
-                               <p class="mb-3 font-normal text-white dark:text-gray-400">La reparación de grietas en piscinas es crucial para evitar filtraciones y daños estructurales. Mediante técnicas especializadas y materiales adecuados, se sellan las grietas de manera efectiva, restaurando la integridad de la piscina y prolongando su vida útil. Este proceso asegura un entorno seguro y funcional para disfrutar       
-                               </p>
-                           </div>
-                   </a>
-                </div>
-                <div class="w-full h-full flex justify-center ">
-                   <Fondo/>
-                   <a href="" class="z-0 my-6 flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                       <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="liner.jpg" alt="">
-                           <div class="flex flex-col justify-between p-4 leading-normal">
-                               <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación de equipos</h5>
-                               <p class="mb-3 font-normal text-white dark:text-gray-400">La reparación de equipos como filtros y desagues es esencial para el mantenimiento óptimo de la piscina. Con diagnósticos precisos y habilidades técnicas, se solucionan problemas de funcionamiento, garantizando la eficiencia del sistema. Esta atención experta asegura un ambiente seguro y disfrutable para toda su familia.     
-                               </p>
-                           </div>
-                   </a>
-                </div>
-               </div> <!--Este es el grid cuidado -->
+    </div>
 
+    <div class="flex flex-wrap justify-center items-center gap-6">
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="fuga.jpg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación de fugas</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">La reparación de fugas en piscinas es esencial para prevenir daños mayores y conservar el agua. Mediante una inspección meticulosa y las técnicas de sellado adecuadas, se localizan y corrigen fugas, asegurando la integridad estructural y evitando pérdidas innecesarias de agua, manteniendo así un entorno sostenible y funcional.
+                </p>               
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="grieta.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación de grietas</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">La reparación de grietas en piscinas es crucial para evitar filtraciones y daños estructurales. Mediante técnicas especializadas y materiales adecuados, se sellan las grietas de manera efectiva, restaurando la integridad de la piscina y prolongando su vida útil. Este proceso asegura un entorno seguro y funcional para disfrutar 
+                </p>                
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
+            <Fondo/>
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="liner.jpg" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación de equipos</h5>
+                <p class="mb-3 font-normal text-white dark:text-gray-400">La reparación de equipos como filtros y desagues es esencial para el mantenimiento óptimo de la piscina. Con diagnósticos precisos y habilidades técnicas, se solucionan problemas de funcionamiento, garantizando la eficiencia del sistema. Esta atención experta asegura un ambiente seguro y disfrutable para toda su familia.
+                </p>               
+            </div>
         </div>
     </div>
+    
 <Footer/>
     
 </body>
