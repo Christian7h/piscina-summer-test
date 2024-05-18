@@ -5,6 +5,13 @@ import Basehead from '../components/Basehead.astro'
 import Carrusel from '../components/Carrusel.astro'
 import Historia from '../components/Historia.astro'
 import Fondo from '../components/Fondo.astro'
+
+import img1 from '../assets/poolmaintence.jpg'
+import img2 from '../assets/builpool.jpg'
+import img3 from '../assets/repararpool.jpg'
+import img4 from '../assets/azulejopool.jpg'
+
+import Image from 'astro/components/Image.astro'
 ---
 
 <!doctype html>
@@ -26,12 +33,11 @@ import Fondo from '../components/Fondo.astro'
 				<h2 class="text-sm text-center text-gray-400">Servicios y Especialidades</h2>
 				<h1 class="text-5xl font-bold underline underline-offset-8 text-center text-white">Servicios</h1>
 			</nav>
-
 		<div>
 
 		<div class="flex flex-wrap justify-center items-center gap-6">
 			<div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-10 backdrop-blur">
-				<img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/poolmaintence.jpg" alt="">
+				<Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img1} format='avif' quality={'low'} alt="mantenimiento piscina"/>
 				<div class="flex flex-col justify-between p-4 leading-normal">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Mantenciones</h5>
 					<p class="mb-3 font-normal text-white dark:text-gray-400">Mantén tu piscina en condiciones óptimas con nuestro servicio de mantenimiento profesional. Desde la limpieza regular hasta el equilibrio químico, nos encargamos de todos los detalles para que puedas disfrutar de tu piscina sin preocupaciones.
@@ -44,14 +50,14 @@ import Fondo from '../components/Fondo.astro'
 							<div class="text-left rtl:text-right">
 								<button class="relative h-[50px] w-40 overflow-hidden border rounded-lg border-pink-400 bg-indigo text-pink-400 shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-pink-400 hover:before:w-2/4 hover:before:bg-pink-400 hover:after:w-2/4 hover:after:bg-pink-400"><span class="relative z-10">Ver Mas..</span></button>
 								<div class="font-sans text-sm font-semibold"></div>
-							</div>	</a>
+							</div>	
+						</a>
 					</div>
 				</div>
 			</div>
 
-
 			<div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-10 backdrop-blur">
-				<img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/builpool.jpg" alt="">
+				<Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img2} format='avif' quality={'low'} alt="contruccion piscina"/>
 				<div class="flex flex-col justify-between p-4 leading-normal">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Construcción</h5>
 					<p class="mb-3 font-normal text-white dark:text-gray-400">Haz realidad tu sueño de tener una piscina personalizada con nuestro servicio de construcción. Nuestro equipo de expertos en diseño y construcción trabajará contigo para crear una piscina que se adapte perfectamente a tu espacio y estilo de vida.
@@ -70,7 +76,7 @@ import Fondo from '../components/Fondo.astro'
 			</div>
 
 			<div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-10 backdrop-blur">
-				<img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/repararpool.jpg" alt="">
+				<Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={img3} format='avif' quality={'low'} alt="reparar piscina"/>
 				<div class="flex flex-col justify-between p-4 leading-normal">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Reparación</h5>
 					<p class="mb-3 font-normal text-white dark:text-gray-400">¿Tu piscina necesita reparaciones? No te preocupes, estamos aquí para ayudarte. Desde fugas hasta problemas de equipo, nuestro equipo de técnicos calificados puede solucionar cualquier problema de manera rápida y eficiente.</p>
@@ -88,7 +94,7 @@ import Fondo from '../components/Fondo.astro'
 			</div>
 
 			<div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-10 backdrop-blur">
-				<img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/azulejopool.jpg" alt="">
+				<Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={img4} format='avif' quality={'low'} alt="azulejo para piscinas"/>
 				<div class="flex flex-col justify-between p-4 leading-normal">
 					<h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Azulejos</h5>
 					<p class="mb-3 font-normal text-white dark:text-gray-400">Renueva el aspecto de tu piscina con nuestro servicio de revestimientos. Ya sea que estés buscando un cambio de color o necesites reparar un revestimiento dañado, tenemos las soluciones adecuadas para ti.</p>

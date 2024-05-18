@@ -3,6 +3,10 @@ import Basehead from "../components/Basehead.astro";
 import Fondo from "../components/Fondo.astro";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+
+import Image from "astro/components/Image.astro";
+import img11 from "../assets/decoracion.jpg"
+import img12 from "../assets/ensamblar.jpg"
 ---
 
 <!DOCTYPE html>
@@ -28,7 +32,7 @@ import Navbar from "../components/Navbar.astro";
     <div class="flex flex-wrap justify-center items-center gap-6">
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="decoracion.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img11} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Ceramicas</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">Agregue elegancia a su piscina con nuestra instalación de cerámicas. Ofrecemos una amplia gama de diseños y estilos para crear el ambiente perfecto. Con materiales duraderos y técnicas precisas, transformamos su área de piscina, garantizando una superficie atractiva y de larga duración, brindando años de disfrute y valor.
@@ -40,7 +44,7 @@ import Navbar from "../components/Navbar.astro";
 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="ensamblar.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img12} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Revestimiento</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">El reemplazo de revestimiento en piscinas restaura su belleza y funcionalidad. Con materiales resistentes y técnicas precisas, se elimina el revestimiento antiguo y se instala uno nuevo, garantizando una superficie duradera y estéticamente atractiva. Revitalizando su piscina, brindando años de disfrute y valor.

@@ -3,6 +3,14 @@ import Basehead from "../components/Basehead.astro";
 import Fondo from "../components/Fondo.astro";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+
+import img5 from "../assets/marcar1.jpg"
+import img6 from "../assets/ensamblar.jpg"
+import img7 from "../assets/fondo11.jpg"
+import img8 from "../assets/liner.jpg"
+import img9 from "../assets/piscina5.jpg"
+import img10 from "../assets/mantencion.jpeg"
+import Image from "astro/components/Image.astro";
 ---
 
 <!DOCTYPE html>
@@ -26,7 +34,7 @@ import Navbar from "../components/Navbar.astro";
     <div class="flex flex-wrap justify-center items-center gap-6">
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="marcar1.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img5} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Marcar Y Cavar</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">Marcar y cavar son uno de los pasos cruciales en la construcción de piscinas. Se marca el área según el diseño y  se cava con precisión, estableciendo asi la base para una instalación exitosa. Este proceso garantiza que la piscina se ajuste perfectamente al espacio deseado, comenzando así el camino hacia un oasis acuático.
@@ -36,7 +44,7 @@ import Navbar from "../components/Navbar.astro";
 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="ensamblar.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img6} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Ensamblar e instalar el armazón</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">Ensamblar e instalar el armazón es el siguiente paso crucial en la construcción de piscinas. Con habilidad y precisión, se monta la estructura según las especificaciones del diseño, asegurando una base sólida y estable. Esto es fundamental para garantizar la durabilidad y funcionalidad de la piscina, preparándola para recibir los siguientes pasos de instalación 
@@ -46,7 +54,7 @@ import Navbar from "../components/Navbar.astro";
 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="fondo1.1.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img7} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Estabilizar el Fondo</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">Estabilizar el fondo es esencial para garantizar la nivelación y resistencia adecuadas de la piscina. Mediante la compactación y nivelación del suelo, se crea una base sólida y uniforme. Este paso crucial asegura la estabilidad estructural y el correcto funcionamiento de la piscina, preparándola para recibir el revestimiento y completar el proyecto de construcción
@@ -56,7 +64,7 @@ import Navbar from "../components/Navbar.astro";
 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="liner.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img8} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Instalación del Liner</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">Instalar el liner es una fase crítica en la construcción de piscinas. Con precisión y cuidado, se coloca el revestimiento sobre la estructura preparada, asegurando un ajuste perfecto y libre de arrugas. Este paso es fundamental para garantizar la estanqueidad y durabilidad de la piscina, creando un ambiente acuático seguro y atractivo.
@@ -66,7 +74,7 @@ import Navbar from "../components/Navbar.astro";
 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="piscina5.jpg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img9} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Rodee su piscina con brocales.</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">Rodear la piscina con brocales es esencial para su acabado y seguridad. Con habilidad y atención al detalle, se instalan los brocales alrededor del borde de la piscina, proporcionando un borde sólido y estético. Este paso finaliza la construcción, creando un área segura y atractiva para disfrutar con familia del agua y tambien relajarse en esta.
@@ -76,7 +84,7 @@ import Navbar from "../components/Navbar.astro";
 
         <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-transparent bg-opacity-0 backdrop-blur">
             <Fondo/>
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="mantencion.jpeg" alt="">
+            <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={img10} alt=""/>
             <div class="flex flex-col justify-between p-4 leading-normal">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Decore y Acondicione su piscina</h5>
                 <p class="mb-3 font-normal text-white dark:text-gray-400">La decoración y el acondicionamiento finalizan el proyecto de su piscina, agregando personalidad y comodidad. Con creatividad, se incorporan elementos decorativos como plantas, iluminación y muebles, creando un ambiente acogedor y elegante. Este paso transforma la piscina en un oasis de relajación y diversión para disfrutar en familia y con amigos.
@@ -85,6 +93,5 @@ import Navbar from "../components/Navbar.astro";
         </div>
     </div>
 <Footer/>
-    
 </body>
 </html>

@@ -3,6 +3,11 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Basehead from "../components/Basehead.astro";
 import Fondo from "../components/Fondo.astro";
+
+import Image from "astro/components/Image.astro";
+import cascada from "../assets/cascada.jpg";
+import ps5 from "../assets/PS5.jpg"
+import fuente from "../assets/fuente.jpg"
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +24,7 @@ import Fondo from "../components/Fondo.astro";
         <div class="w-full h-full flex justify-center ">
            <Fondo/>
            <a class="z-0 my-6  flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-               <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="cascada.jpg" alt="">
+               <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src={cascada} alt=""/>
                    <div class="flex flex-col justify-between p-4 leading-normal">
                        <h5 class="mb-2 mx-auto text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Cascadas</h5>
                        <p class="mb-3 font-normal text-white dark:text-gray-400">Recreamos en su espacio una ambientación natural de cascadas de agua, esta puede ser una caída de agua para su piscina o una laguna artificial en su jardín. Con esto usted experimentara una visión agradable y el sonido del agua lo hará trasladarse a un ecosistema natural; deje que su imaginación se maraville y sueñe con su propio paisaje. Usted sentirá la belleza y serenidad de la naturaleza en su jardín.     
@@ -30,7 +35,7 @@ import Fondo from "../components/Fondo.astro";
         <div class="w-full h-full flex justify-center ">
            <Fondo/>
            <a  class="z-0 my-6  flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-               <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="PS5.jpg" alt="">
+               <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src={ps5} alt=""/>
                    <div class="flex flex-col justify-between p-4 leading-normal">
                        <h5 class="mb-2 text-2xl mx-auto font-bold tracking-tight text-blue-600 dark:text-white">Hidromasaje</h5>
                        <p class="mb-3 font-normal text-white dark:text-gray-400">Con diseños innovadores y los avances de alta tecnología en aislamiento, sistemas de filtración y más, un Spa es la cima de la calidad y fiabilidad.
@@ -42,7 +47,7 @@ import Fondo from "../components/Fondo.astro";
         <div class="w-full h-full flex justify-center ">
            <Fondo/>
            <a class="z-0 my-6 flex flex-col items-center bg-transparent border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-               <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src="fuente.jpg" alt="">
+               <Image class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg pl-2" src={fuente} alt=""/>
                    <div class="flex flex-col justify-between p-4 leading-normal">
                        <h5 class="mb-2 mt-20 mx-auto text-2xl font-bold tracking-tight text-blue-600 dark:text-white">Fuentes ornamentales    </h5>
                        <p class="mb-3 font-normal text-white dark:text-gray-400">Nuestros dieseños, son exclusivos, para su jardín o hambiente que Usted requiera. <br><br>   <br>   <br>   <br> <br>     <br>                                                                                          
@@ -50,8 +55,6 @@ import Fondo from "../components/Fondo.astro";
                 </div>
            </a>
         </div>
-
-
 
        </div> <!--Este es el grid cuidado -->
 

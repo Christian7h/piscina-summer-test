@@ -2,7 +2,21 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Basehead from "../components/Basehead.astro";
-import Fondo from "../components/Fondo.astro"
+import Fondo from "../components/Fondo.astro";
+
+import Image from "astro/components/Image.astro";
+import ps1 from "../assets/PS1.jpg"
+import ps2 from "../assets/PS2.jpg"
+import ps3 from "../assets/PS3.jpg"
+import ps4 from "../assets/PS4.jpg"
+import ps5 from "../assets/PS5.jpg"
+import ps6 from "../assets/PS6.jpg"
+import ps7 from "../assets/PS7.jpg"
+import ps8 from "../assets/PS8.jpg"
+import ps9 from "../assets/PS9.jpg"
+import ps10 from "../assets/PS10.jpg"
+import ps11 from "../assets/PS11.jpg"
+import ps12 from "../assets/PS12.jpg"
 
 ---
 <!DOCTYPE html>
@@ -28,46 +42,46 @@ import Fondo from "../components/Fondo.astro"
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-auto w-[80%] ">
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS1.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps1} alt=""/>
         </div>
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS2.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps2} alt=""/>
         </div>
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS3.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS4.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS5.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS6.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps3} alt=""/>
         </div>
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS7.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps4} alt=""/>
         </div>
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS8.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps5} alt=""/>
         </div>
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS9.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps6} alt=""/>
         </div>
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS10.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps7} alt=""/>
         </div>
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS11.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps8} alt=""/>
         </div>
         <div>
-            <img class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src="/PS12.jpg" alt="">
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps9} alt=""/>
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps10} alt=""/>
+        </div>
+        <div>
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps11} alt=""/>
+        </div>
+        <div>
+            <Image class="h-auto max-w-full border-2 border-white rounded-lg transition ease-in-out delay-50 duration-300  hover:scale-110" src={ps12} alt=""/>
         </div>
     </div>
 </div>
