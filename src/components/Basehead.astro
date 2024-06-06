@@ -1,3 +1,14 @@
+---
+import SpeedInsights from '@vercel/speed-insights/astro';
+
+---
+<script is:inline>
+  function speedInsightsBeforeSend(data){
+    console.log("Speed Insights before send", data)
+    return data;
+  }
+</script>
+<SpeedInsights />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/logonavbar.png" />
