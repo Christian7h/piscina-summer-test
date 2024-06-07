@@ -1,6 +1,8 @@
 ---
 import Image from "astro/components/Image.astro"
 import logonavbar from "../assets/logonavbar.png"
+import SpeedInsights from '@vercel/speed-insights/astro';
+
 ---
 <nav class="border-black dark:bg-gray-900 dark:border-gray-700 z-20 border-b-2 fixed top-0 left-0 right-0 backdrop-blur">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 backdrop-blur">
@@ -63,3 +65,4 @@ import logonavbar from "../assets/logonavbar.png"
   </div>
 
 </nav>
+<SpeedInsights />

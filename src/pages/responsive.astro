@@ -5,6 +5,8 @@ import Basehead from '../components/Basehead.astro'
 import Carrusel from '../components/Carrusel.astro'
 import Historia from '../components/Historia.astro'
 import Fondo from '../components/Fondo.astro'
+import SpeedInsights from '@vercel/speed-insights/astro';
+
 ---
 
 <!doctype html>
@@ -40,5 +42,7 @@ import Fondo from '../components/Fondo.astro'
 		
 		<Footer/>
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+		<SpeedInsights />
+
 	</body>
 </html>

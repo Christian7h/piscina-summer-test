@@ -1,5 +1,7 @@
 ---
 const today = new Date();
+import SpeedInsights from '@vercel/speed-insights/astro';
+
 ---
 
 <footer class="text-white">
@@ -47,6 +49,8 @@ const today = new Date();
 	-->
 
 	</div>
+	<SpeedInsights />
+
 </footer>
 <style>
 	footer {
