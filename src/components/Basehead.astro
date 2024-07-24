@@ -1,5 +1,6 @@
 ---
-import SpeedInsights from '@vercel/speed-insights/astro';
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+
 
 ---
 <meta charset="utf-8" />
@@ -12,7 +13,19 @@ import SpeedInsights from '@vercel/speed-insights/astro';
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
-<script src="https://cdn.tailwindcss.com/3.3.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
-<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-<SpeedInsights/>
+<ViewTransitions>
+<script is:inline src="https://cdn.tailwindcss.com/3.3.0">
+if (!window.SomeGlobal) {
+    window.SomeGlobal = {} // ....
+  }
+  </script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js">
+if (!window.SomeGlobal) {
+    window.SomeGlobal = {} // ....
+  }
+</script>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js">
+if (!window.SomeGlobal) {
+    window.SomeGlobal = {} // ....
+  }
+</script>
